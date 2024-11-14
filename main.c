@@ -18,7 +18,6 @@ int	main(void)
 	int fd1, fd2, fd3, fd4, fd5;
 	char *line;
 
-	// Abrindo múltiplos arquivos
 	fd1 = open("test.txt", O_RDONLY);
 	if (fd1 < 0)
 	{
@@ -64,7 +63,6 @@ int	main(void)
 		return (1);
 	}*/
 
-	// Leitura alternada entre os arquivos
 	while ((line = get_next_line(fd1)) != NULL)
 	{
 		if (!line)
@@ -102,7 +100,6 @@ int	main(void)
 		free(line);
 	}
 */
-	// Fechando os arquivos
 	close(fd1);
 	close(fd2);
 	close(fd3);
